@@ -1,0 +1,248 @@
+=== Model information ===
+
+Filename:     BN cvf=10-iteration=5.model
+Scheme:weka.classifiers.bayes.BayesianLogisticRegression -D -Tl 5.0E-4 -S 0.5 -H 1 -V 0.6890206269142071 -R R:0.01-316,3.16 -P 1 -F 2 -seed 1 -I 100 -N
+Relation:NucleiDtector-weka.filters.unsupervised.instance.Randomize-S42-weka.filters.unsupervised.attribute.AddID-Cfirst-NID-weka.filters.unsupervised.attribute.Remove-R15-weka.filters.unsupervised.attribute.Remove-R1-weka.filters.unsupervised.attribute.AddID-Cfirst-NID-weka.filters.unsupervised.attribute.Remove-R1_predicted-weka.filters.unsupervised.instance.Randomize-S42
+Attributes:   82
+              C5_1
+              C5_2
+              C5_3
+              C5_4
+              C5_5
+              C5_6
+              C5_7
+              C5_8
+              C5_9
+              C5_10
+              C5_11
+              C5_12
+              C5_13
+              C5_14
+              C5_15
+              C5_16
+              C5_17
+              C5_18
+              C5_19
+              C5_20
+              C5_21
+              C5_22
+              C5_23
+              C5_24
+              C5_25
+              C5_26
+              C5_27
+              C5_28
+              C5_29
+              C5_30
+              C5_31
+              C5_32
+              C5_33
+              C5_34
+              C5_35
+              C5_36
+              C5_37
+              C5_38
+              C5_39
+              C5_40
+              C5_41
+              C5_42
+              C5_43
+              C5_44
+              C5_45
+              C5_46
+              C5_47
+              C5_48
+              C5_49
+              C5_50
+              C5_51
+              C5_52
+              C5_53
+              C5_54
+              C5_55
+              C5_56
+              C5_57
+              C5_58
+              C5_59
+              C5_60
+              C5_61
+              C5_62
+              C5_63
+              C5_64
+              C5_65
+              C5_66
+              C5_67
+              C5_68
+              C5_69
+              C5_70
+              C5_71
+              C5_72
+              C5_73
+              C5_74
+              C5_75
+              C5_76
+              C5_77
+              C5_78
+              C5_79
+              C5_80
+              C5_81
+              class
+
+=== Classifier model ===
+
+Norm-Based Hyperparameter Selection: 0.6890206269142071
+
+Regression Coefficients
+=========================
+
+(intercept) : -0.7738597490360872
+C5_1 : 0.6410524497464352
+C5_2 : 0.4687505347144991
+C5_3 : -0.5433965286290225
+C5_4 : -0.04077045284613798
+C5_5 : -0.34869889576872903
+C5_6 : -0.207586800156508
+C5_7 : 0.13860171297331703
+C5_8 : -0.05546253477908897
+C5_9 : -0.18160207753262853
+C5_10 : -0.008327650009781345
+C5_11 : 0.03620554790261759
+C5_12 : 0.04680965858146018
+C5_13 : 0.29249051355871836
+C5_14 : -1.298182744585569
+C5_15 : -0.6833065169281731
+C5_16 : -1.120492661324123
+C5_17 : -0.24746448430241688
+C5_18 : -0.7443491553533252
+C5_19 : -0.17213320456254658
+C5_20 : -0.22204160985819343
+C5_21 : 0.18854085938369802
+C5_22 : 0.12327788559765149
+C5_23 : -0.08376733176233347
+C5_24 : -0.8341098787529684
+C5_25 : -0.13273952190502794
+C5_26 : -0.038778701796526344
+C5_27 : 0.17890033599863267
+C5_28 : -0.0446034823634118
+C5_29 : 0.0684120387861656
+C5_30 : -0.0409858520710328
+C5_31 : 0.02313508299052977
+C5_32 : 0.012420164220122766
+C5_33 : -0.005820683195824156
+C5_34 : 0.2878825478962059
+C5_35 : -0.061363142726058986
+C5_36 : -0.07839144808841778
+C5_37 : 0.12494758040745209
+C5_38 : -0.06689330619262496
+C5_39 : -0.06169059982417441
+C5_40 : -0.1260069978091604
+C5_41 : -0.014480823292655945
+C5_42 : 0.07694547429438851
+C5_43 : -0.052733647530611646
+C5_44 : 0.0314599946754051
+C5_45 : -0.017255773986126745
+C5_46 : -0.5211867247169132
+C5_47 : -0.11543435172344478
+C5_48 : -0.11092693868916954
+C5_49 : -0.5422211524996977
+C5_50 : -0.056005024943060915
+C5_51 : -0.4976952960532756
+C5_52 : -0.5685604346403375
+C5_53 : -0.022174927351688085
+C5_54 : 0.18435369832099435
+C5_55 : 0.3436970078508507
+C5_56 : 0.04557307061188548
+C5_57 : -0.1647655079181728
+C5_58 : -0.05181941980966839
+C5_59 : 0.07497857698244456
+C5_60 : 0.11861911868753039
+C5_61 : 0.12355989299113769
+C5_62 : 0.010037148059047606
+C5_63 : 0.11540702942559117
+C5_64 : 0.02509850464607255
+C5_65 : 0.21784433046541785
+C5_66 : 0.36956310865127157
+C5_67 : 0.21071632439165514
+C5_68 : -0.07370088385650295
+C5_69 : -0.10349928158217507
+C5_70 : -0.0031169782626644343
+C5_71 : -0.07624087706384
+C5_72 : -0.00769824629553028
+C5_73 : 0.10683024530298335
+C5_74 : -0.07938387762075026
+C5_75 : 0.052258171562795636
+C5_76 : 0.013456057030954916
+C5_77 : 0.23965979110727
+C5_78 : 0.0333879483790387
+C5_79 : 0.1687794681583773
+C5_80 : 0.13496089349036083
+C5_81 : 2.0892811078719027
+===========================
+
+Likelihood: -74.58823975919323
+
+Penalty: -70.2723426156007
+
+Regularized Log Posterior: -144.86058237479392
+===========================
+
+
+
+=== Re-evaluation on test set ===
+
+User supplied test set
+Relation:     NucleiDtector-weka.filters.unsupervised.instance.Randomize-S42-weka.filters.unsupervised.attribute.AddID-Cfirst-NID-weka.filters.unsupervised.attribute.Remove-R15-weka.filters.unsupervised.attribute.Remove-R1-weka.filters.unsupervised.attribute.AddID-Cfirst-NID-weka.filters.unsupervised.attribute.Remove-R1_predicted
+Instances:     unknown (yet). Reading incrementally
+Attributes:   82
+
+=== Summary ===
+
+Correctly Classified Instances          81              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0     
+Root mean squared error                  0     
+Total Number of Instances               81     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0          1         1         1          1        0
+                 1         0          1         1         1          1        1
+Weighted Avg.    1         0          1         1         1          1    
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 67  0 |  a = 0
+  0 14 |  b = 1
+
+
+=== Re-evaluation on test set ===
+
+User supplied test set
+Relation:     NucleiDtector-weka.filters.unsupervised.instance.Randomize-S42-weka.filters.unsupervised.attribute.AddID-Cfirst-NID-weka.filters.unsupervised.attribute.Remove-R15-weka.filters.unsupervised.attribute.Remove-R1-weka.filters.unsupervised.attribute.AddID-Cfirst-NID-weka.filters.unsupervised.attribute.Remove-R1_predicted
+Instances:     unknown (yet). Reading incrementally
+Attributes:   82
+
+=== Summary ===
+
+Correctly Classified Instances          81              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0     
+Root mean squared error                  0     
+Total Number of Instances               81     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0          1         1         1          1        0
+                 1         0          1         1         1          1        1
+Weighted Avg.    1         0          1         1         1          1    
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 67  0 |  a = 0
+  0 14 |  b = 1
+

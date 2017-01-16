@@ -1,0 +1,218 @@
+=== Model information ===
+
+Filename:     BN cvf=10-iteration=3.model
+Scheme:weka.classifiers.bayes.BayesianLogisticRegression -D -Tl 5.0E-4 -S 0.5 -H 1 -V 0.6971881139842052 -R R:0.01-316,3.16 -P 1 -F 2 -seed 1 -I 100 -N
+Relation:NucleiDtector-weka.filters.unsupervised.instance.Randomize-S42-weka.filters.unsupervised.attribute.AddID-Cfirst-NID-weka.filters.unsupervised.attribute.Remove-R15-weka.filters.unsupervised.attribute.Remove-R1-weka.filters.unsupervised.attribute.AddID-Cfirst-NID-weka.filters.unsupervised.attribute.Remove-R1_predicted-weka.filters.unsupervised.instance.Randomize-S42
+Attributes:   82
+              C5_1
+              C5_2
+              C5_3
+              C5_4
+              C5_5
+              C5_6
+              C5_7
+              C5_8
+              C5_9
+              C5_10
+              C5_11
+              C5_12
+              C5_13
+              C5_14
+              C5_15
+              C5_16
+              C5_17
+              C5_18
+              C5_19
+              C5_20
+              C5_21
+              C5_22
+              C5_23
+              C5_24
+              C5_25
+              C5_26
+              C5_27
+              C5_28
+              C5_29
+              C5_30
+              C5_31
+              C5_32
+              C5_33
+              C5_34
+              C5_35
+              C5_36
+              C5_37
+              C5_38
+              C5_39
+              C5_40
+              C5_41
+              C5_42
+              C5_43
+              C5_44
+              C5_45
+              C5_46
+              C5_47
+              C5_48
+              C5_49
+              C5_50
+              C5_51
+              C5_52
+              C5_53
+              C5_54
+              C5_55
+              C5_56
+              C5_57
+              C5_58
+              C5_59
+              C5_60
+              C5_61
+              C5_62
+              C5_63
+              C5_64
+              C5_65
+              C5_66
+              C5_67
+              C5_68
+              C5_69
+              C5_70
+              C5_71
+              C5_72
+              C5_73
+              C5_74
+              C5_75
+              C5_76
+              C5_77
+              C5_78
+              C5_79
+              C5_80
+              C5_81
+              class
+
+=== Classifier model ===
+
+Norm-Based Hyperparameter Selection: 0.6971881139842052
+
+Regression Coefficients
+=========================
+
+(intercept) : -0.6446926512676624
+C5_1 : -0.41071710885065577
+C5_2 : -0.44835866196305096
+C5_3 : -0.3037794640404994
+C5_4 : -0.344445609537845
+C5_5 : 0.06365655955132682
+C5_6 : 0.5447461752424858
+C5_7 : -0.16063162349970064
+C5_8 : -0.626108789013381
+C5_9 : 0.23984876368693478
+C5_10 : 0.7923683891865295
+C5_11 : -0.08979339544023032
+C5_12 : 0.24818384328581608
+C5_13 : -0.869707251799254
+C5_14 : -0.09606420250366479
+C5_15 : -0.39920663855523436
+C5_16 : 0.404777918168248
+C5_17 : -0.11289304123239019
+C5_18 : 0.09634119772250489
+C5_19 : -0.21911594757728625
+C5_20 : -0.014516060027468625
+C5_21 : -0.3312560682220883
+C5_22 : -0.023781367054738756
+C5_23 : 0.37024104933801394
+C5_24 : 0.06797347813389217
+C5_25 : -0.08773436308993218
+C5_26 : -0.12607484427059915
+C5_27 : 0.7137129835020043
+C5_28 : -0.7097250382674261
+C5_29 : -0.07504563688977299
+C5_30 : 0.11151962056508369
+C5_31 : 0.03732252410168918
+C5_32 : 0.04682577748259139
+C5_33 : -0.09000879167117663
+C5_34 : -0.06664996627128678
+C5_35 : -0.0421424908314671
+C5_36 : -0.867171248232993
+C5_37 : -0.05790599968428059
+C5_38 : -0.0916386884875508
+C5_39 : -0.3344621423135988
+C5_40 : 0.09091452996481086
+C5_41 : -0.013959244034605191
+C5_42 : -0.020292065592704807
+C5_43 : 0.041659692176752174
+C5_44 : 0.04469582539114028
+C5_45 : 0.0015356971093762571
+C5_46 : 0.015858098009320653
+C5_47 : -0.013167853983367726
+C5_48 : 0.07853937943273599
+C5_49 : -0.4911773034125301
+C5_50 : -0.09166540974585284
+C5_51 : -0.5084545818780078
+C5_52 : -0.4603659101796992
+C5_53 : 0.03403771174194125
+C5_54 : -0.00937773636762769
+C5_55 : 0.1936108244967364
+C5_56 : 0.018706896037081384
+C5_57 : -0.2472718892848515
+C5_58 : -0.06624439657276861
+C5_59 : -0.0046537850235422885
+C5_60 : 0.09461368475356324
+C5_61 : 0.13408963816440284
+C5_62 : -0.010616925530250843
+C5_63 : 0.1488299840007609
+C5_64 : 0.017891516059961823
+C5_65 : 0.10899178794422855
+C5_66 : 0.16728486983785276
+C5_67 : 0.10811634343714843
+C5_68 : -0.054634244346724224
+C5_69 : -0.15513333532149196
+C5_70 : 0.006933185615163103
+C5_71 : -0.04958916516482546
+C5_72 : 0.044102601094800596
+C5_73 : 0.12769018788309397
+C5_74 : -0.055403875862918096
+C5_75 : 0.11055277690180319
+C5_76 : 0.011002876879484036
+C5_77 : 0.14336978312358653
+C5_78 : 0.017325350103415613
+C5_79 : 0.15198100815114388
+C5_80 : 0.07268496937969138
+C5_81 : 1.5695569988846434
+===========================
+
+Likelihood: -126.4217095981688
+
+Penalty: -68.00852992762496
+
+Regularized Log Posterior: -194.43023952579375
+===========================
+
+
+
+=== Re-evaluation on test set ===
+
+User supplied test set
+Relation:     NucleiDtector-weka.filters.unsupervised.instance.Randomize-S42-weka.filters.unsupervised.attribute.AddID-Cfirst-NID-weka.filters.unsupervised.attribute.Remove-R15-weka.filters.unsupervised.attribute.Remove-R1-weka.filters.unsupervised.attribute.AddID-Cfirst-NID-weka.filters.unsupervised.attribute.Remove-R1_predicted
+Instances:     unknown (yet). Reading incrementally
+Attributes:   82
+
+=== Summary ===
+
+Correctly Classified Instances          82              100      %
+Incorrectly Classified Instances         0                0      %
+Kappa statistic                          1     
+Mean absolute error                      0     
+Root mean squared error                  0     
+Total Number of Instances               82     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0          1         1         1          1        0
+                 1         0          1         1         1          1        1
+Weighted Avg.    1         0          1         1         1          1    
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 68  0 |  a = 0
+  0 14 |  b = 1
+

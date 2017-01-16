@@ -1,0 +1,407 @@
+%% BioMed_Central_Tex_Template_v1.06
+%%                                      %
+%  bmc_article.tex            ver: 1.06 %
+%                                       %
+
+%%IMPORTANT: do not delete the first line of this template
+%%It must be present to enable the BMC Submission system to
+%%recognise this template!!
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                     %%
+%%  LaTeX template for BioMed Central  %%
+%%     journal article submissions     %%
+%%                                     %%
+%%          <8 June 2012>              %%
+%%                                     %%
+%%                                     %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                                                 %%
+%% For instructions on how to fill out this Tex template           %%
+%% document please refer to Readme.html and the instructions for   %%
+%% authors page on the biomed central website                      %%
+%% http://www.biomedcentral.com/info/authors/                      %%
+%%                                                                 %%
+%% Please do not use \input{...} to include other tex files.       %%
+%% Submit your LaTeX manuscript as one .tex document.              %%
+%%                                                                 %%
+%% All additional figures and files should be attached             %%
+%% separately and not embedded in the \TeX\ document itself.       %%
+%%                                                                 %%
+%% BioMed Central currently use the MikTex distribution of         %%
+%% TeX for Windows) of TeX and LaTeX.  This is available from      %%
+%% http://www.miktex.org                                           %%
+%%                                                                 %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% additional documentclass options:
+%  [doublespacing]
+%  [linenumbers]   - put the line numbers on margins
+
+%%% loading packages, author definitions
+
+%\documentclass[twocolumn]{bmcart}% uncomment this for twocolumn layout and comment line below
+\documentclass{bmcart}
+
+%%% Load packages
+%\usepackage{amsthm,amsmath}
+%\RequirePackage{natbib}
+%\RequirePackage[authoryear]{natbib}% uncomment this for author-year bibliography
+%\RequirePackage{hyperref}
+\usepackage[utf8]{inputenc} %unicode support
+%\usepackage[applemac]{inputenc} %applemac support if unicode package fails
+%\usepackage[latin1]{inputenc} %UNIX support if unicode package fails
+\usepackage{multirow}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                             %%
+%%  If you wish to display your graphics for   %%
+%%  your own use using includegraphic or       %%
+%%  includegraphics, then comment out the      %%
+%%  following two lines of code.               %%
+%%  NB: These line *must* be included when     %%
+%%  submitting to BMC.                         %%
+%%  All figure files must be submitted as      %%
+%%  separate graphics through the BMC          %%
+%%  submission process, not included in the    %%
+%%  submitted article.                         %%
+%%                                             %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\def\includegraphic{}
+\def\includegraphics{}
+
+
+
+%%% Put your definitions there:
+\startlocaldefs
+\endlocaldefs
+
+
+%%% Begin ...
+\begin{document}
+
+%%% Start of article front matter
+\begin{frontmatter}
+
+\begin{fmbox}
+\dochead{Research}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Enter the title of your article here     %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{Features-driven convolutional neural networks for cervical cell classification}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Enter the authors here                   %%
+%%                                          %%
+%% Specify information, if available,       %%
+%% in the form:                             %%
+%%   <key>={<id1>,<id2>}                    %%
+%%   <key>=                                 %%
+%% Comment or delete the keys which are     %%
+%% not used. Repeat \author command as much %%
+%% as required.                             %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\author[
+   addressref={aff1,aff2},                   % id's of addresses, e.g. {aff1,aff2}
+   corref={aff1},                       % id of corresponding address, if any
+   % noteref={n1},                        % id's of article notes, if any
+   email={jtello@itslerdo.edu.mx}   % email address
+]{\inits{ST}\fnm{Santiago} \snm{Tello-Mijares}}
+\author[
+   addressref={aff2},
+   email={j.bescos@uam.es}
+]{\inits{JB}\fnm{Jesús} \snm{Bescós}}
+\author[
+   addressref={aff3},
+   email={francisco.floresgarcia@gmail.com}
+]{\inits{FF}\fnm{Francisco} \snm{Flores}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Enter the authors' addresses here        %%
+%%                                          %%
+%% Repeat \address commands as much as      %%
+%% required.                                %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\address[id=aff1]{%                           % unique id
+  \orgname{Mechatronics Postgraduate Department, Instituto Tecnológico Superior de Lerdo}, % university, etc
+  \street{Av. Tecnológico, 1555},                     %
+  \postcode{35150}                                % post or zip code
+  \city{Lerdo},                              % city
+  \cny{México}                                    % country
+}
+\address[id=aff2]{%
+  \orgname{Escuela Politécnica Superior, Video Processing and Understanding Lab, Universidad Autónoma de Madrid},
+  \street{Francisco Tomás and Valiente, 11},
+  \postcode{28049}
+  \city{Madrid},
+  \cny{Spain}
+}
+\address[id=aff3]{%
+  \orgname{Postgraduate Department, Instituto Tecnológico de la Laguna},
+  \street{Blvd. Revolución and Av. Cuauhtemoc},
+  \postcode{27000}
+  \city{Torreón},
+  \cny{México}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Enter short notes here                   %%
+%%                                          %%
+%% Short notes will be after addresses      %%
+%% on first page.                           %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\begin{artnotes}
+%\note{Sample of title note}     % note to the article
+%\note[id=n1]{Equal contributor} % note, connected to author
+%\end{artnotes}
+
+\end{fmbox}% comment this for two column layout
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% The Abstract begins here                 %%
+%%                                          %%
+%% Please refer to the Instructions for     %%
+%% authors on http://www.biomedcentral.com  %%
+%% and include the section headings         %%
+%% accordingly for your article type.       %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{abstractbox}
+\begin{abstract} % abstract
+\parttitle{Background} 
+We propose a cervical cell (CC) image classification method using a combination of classical features (size, color, etc.) with features extracted from the last layer from a convolutional neuronal network (CNN), hereinafter CNN features.
+\parttitle{Methods} 
+On one side, after CC segmentation into the nucleus and cytoplasm, we extract the set of classical features for every input image following well known procedures. On the other side, in the absence of the large CC images database traditionally required by CNNs to succeed, we guide the extraction of CNN features from the Herlev dataset (just 819 images) following a novel procedure: classical features are used to generate a synthetic image for every input image; these synthetic images, capturing the essence of the cells, are the ones used for training and testing the CNN.
+\parttitle{Results} 
+Our experiments comparing both sets of features and different classification schemes conclude that the best configuration, which achieves 100\% precision and 98.61\% recall in normal/abnormal CC classification (far superior to the state-of-the-art), consists of combining classical and CNN features.
+\parttitle{Conclusion}
+Classifying cervical cell in Pap-smear images is generally accepted as a prerequisite to helping in the diagnosis of uterine cervical cancer. Our main contributions were the novel use of a classical-CNN features and the evaluation of several classification strategies to tackle this problem. We have thoroughly analyzed reported works on the topic and discussed our results in light of these works. This analysis reasonably validates the novelty and quality of our achievements in the absence of a fully fair framework to objectively compare our results.   
+\end{abstract}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% The keywords begin here                  %%
+%%                                          %%
+%% Put each keyword in separate \kwd{}.     %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{keyword}
+\kwd{Image processing}
+\kwd{cervical cells imaging}
+\kwd{convolutional neural network}
+\end{keyword}
+
+% MSC classifications codes, if any
+%\begin{keyword}[class=AMS]
+%\kwd[Primary ]{}
+%\kwd{}
+%\kwd[; secondary ]{}
+%\end{keyword}
+
+\end{abstractbox}
+%
+%\end{fmbox}% uncomment this for twcolumn layout
+
+\end{frontmatter}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% The Main Body begins here                %%
+%%                                          %%
+%% Please refer to the instructions for     %%
+%% authors on:                              %%
+%% http://www.biomedcentral.com/info/authors%%
+%% and include the section headings         %%
+%% accordingly for your article type.       %%
+%%                                          %%
+%% See the Results and Discussion section   %%
+%% for details on how to create sub-sections%%
+%%                                          %%
+%% use \cite{...} to cite references        %%
+%%  \cite{koon} and                         %%
+%%  \cite{oreg,khar,zvai,xjon,schn,pond}    %%
+%%  \nocite{smith,marg,hunn,advi,koha,mouse}%%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%% start of article main body
+% <put your article body there>
+
+%%%%%%%%%%%%%%%%
+%% Background %%
+%%
+\section*{Background}
+The analysis of cervical cell (CC) images in terms of the detection of nucleus and cytoplasm deformation provides important diagnosis clues to prevent cervical cancer. CC images can be classified into seven classes\cite{1} that differ in terms of the size and shape of the nuclei and cytoplasm: normal columnar epithelium (cyl), normal intermediate squamous (inter), normal superficial squamous (super), normal squamous non-keratinizing light dysplastic (let), abnormal squamous non-keratinizing moderate dysplastic (mod), abnormal squamous non-keratinizing severe dysplastic (svar) and abnormal carcinoma in situ (carci). However, as a minimal requirement for diagnosis is to separate normal from abnormal cells\cite{2,3}, we have adopted the Bethesda System terminology\cite{4}, which classifies squamous intraepithelial lesion (SIL) into two classes (see Fig. 1): normal or low grade (L-SIL), including inter and super classes; and abnormal or high grade (H-SIL), including let, mod, svar, and carci classes. Cyl cells are classified as neither normal nor abnormal\cite{5,6}.
+
+We use the Herlev dataset provided in \cite{1} (from \cite{7}) to perform tests for the selection of several classification parameters and to conduct the final evaluation. This dataset includes 819 Pap smear RGB images---0.201 $mu$m per pixel, an average of 156x140 pixels, and 40x magnification---, with the following breakdown: L-SIL=144 (inter=70, super=74) and H-SIL=675 (let=182, mod=146, svar=197, and carci=150).   
+
+The Herlev dataset has been extensively used to test CC images classification into two classes \cite{2,3,5,6,8,9} (see Table 1): the best results, reported by Dounias et al.\cite{8}, applied second-order neural networks (ANNs) with a 10-fold cross validation; Tsakonas et al.\cite{3} used genetic programming (GP); and Marinakis et al.\cite{2} introduced particle swarm optimization (PSO) for feature selection and the one-nearest neighbor (1nn) classifier to optimize the patterns recognition. More recent works include: Nanni et al.\cite{9}, that used a support vector machine (SVM) on textures described via local binary patterns (LBP); Chankong et al.\cite{6}, which presented an automated approach to a CC classification method that uses an ANNs and a catalogue of six nucleus features and three nucleus-cytoplasm features (nine in total); and Genctav et al.\cite{5}, that described each cell using 14 different features\cite{1} for the classification of two-class CCs using the optimal leaf ordering algorithm on the binary tree (BT) obtained by hierarchical clustering.
+
+We here present an effective and efficient combination of cell features: a set of classical features, similar to those reported in \cite{2,3,5,6,8,9}; and a set of features resulting from the last layer of a CNN, say CNN features (Fig. 1). Originally proposed by LeCun et al.\cite{10}, a CNN is a neural network model with three key architectural ideas: local receptive fields, weight sharing, and sub-sampling in the spatial domain. A CNN consists of three main types of layers designed to obtain the feature maps: spatial convolution layers (Cl), subsampling pooling layers (Sl), and fully connected layers (Fl)---l is a layer index (1-6)---used to obtain the low-level, mid-level, and high-level features (Fig. 1).  
+
+We use a CNN based on previous studies designed to process two-dimensional (2-D) images\cite{11,12}. The Cl and Sl layers are 2-D layers, whereas the Fl layer and output are 1-D layers. The motivation is that a CNN is advantageous for features extraction in that it is hierarchical (with multiple layers for more compactness and efficiency) and invariance-redundant (for position, size, luminance, rotation, pose-angle, noise, and distortion). 
+
+CNNs have recently been used in several applications, including hand-written digit recognition, face detection, and face recognition; a comprehensive review of CNN can be found in \cite{13}. We propose an efficient method for extracting CC classification features from the last layer of a CNN. We demonstrate that a classification method using the combination of classical features and these CNN features is more robust and efficient than conventional state-of-the-art (SoA) methods using only classical features. Our main contributions are: the novel combination of CNN features and classical features from the cervical nucleus and cytoplasm; the generation of synthetic input images, capturing relevant cell information, to train and feed the CNN; the generation of a representative dataset with ground-truth data; and the evaluation of several classification strategies to confront the classification problem---a tree random forest (TRF), a multilayer perceptron (MLP), and a Bayesian network (BN)---. 
+
+\section*{Implementation}
+Fig. 1 illustrates the general flow of the proposed cervical cell (CC) image classification method, which is a combination of classical features with CNN features. 
+
+\subsection*{Classical features extraction}
+Classical features extraction: After cell segmentation in the Lab color image, we extract the features from the segmented nucleus and cytoplasm (Fig. 1). We extract a 32 values feature-vector, including 16 values for the nucleus, 12 for the cytoplasm, and 4 more for the global cell. For the nucleus, 7 features describing shape (area, compactness, height, width, width/height, elongation, roundness), 2 features describing mean color and variance (3 Lab values each), and an additional feature for texture homogeneity (3 Lab values). For the cytoplasm, 3 features for shape (area, height, width), and the color and texture Lab features. For the global cell, 2 shape features describing cell area and compactness, and 2 more features measuring the relative area and intensity between the nucleus and the cytoplasm. All these features are then normalized for obtained the synthetic cell image.
+
+\subsection*{CNN features extraction}
+CNNs usually operate over thousands of size-normalized input images, which requires previous adaptation of these images. Our main contribution in this phase is to replace this adaptation by the content-based generation of a synthetic cell image. For every variable-size input CC image we generate a fixed-size synthetic image capturing the semantics of the cell, by using classical features extracted from the nucleus and cytoplasm---width, height, and mean color---of the input image. We first rotate the input image to align vertically the nucleus directrix; then we fit the nucleus and the cytoplasm to respective ellipses that are then size-normalized according to maximum and minimum observations in the training set; and finally we color the ellipses with the respective mean Lab color features. These 32x32 Lab images feed the CNN (Fig. 1), which is designed to extract 16 3-dimensional vectors of high-level features. 
+
+\section*{Results}
+In order to classify CCs into two classes, we have performed exhaustive tests with three different classification techniques implemented in Weka (Waikato Environment for Knowledge Analysis)\cite{14}: MLP, TRF, and BN. As TRF obtained, by far, the best results, we include here only results for this technique.	
+
+First, we compared the potential of both sets of features, testing them separately in a 2-fold setup (2 iterations, 50\% training, 50\% test). As shown in Fig. 2, the CNN features behave much worse than the classical ones, even with the proposed content-based adaptation of the input CC images, designed to compensate for the absence of a large database (the Herlev dataset just includes 819 images). However, the CNN features do complement the classical features, so that their combination obtains the best results.
+
+Secondly, we compared the proposed combination of classical and CNN features with results reported by other methods \cite{2,3,5,6,8,9} (Table 1). These methods also use the Herlev dataset but sometimes classify using more favorable cross-validation setups: 5-fold (5 iterations, 80\% training, 20\% test), 10-fold (10 iterations, 90\% training, 10\% test), or leave-one-out. We also include this information in order to help comparing. Table 1 shows that the proposed method outperforms results of previous works, which only consider classical features.
+
+\section*{Conclusion}
+Both manual and semiautomatic methods for the analysis of Pap smear samples and timely diagnosis show three main problems that must be solved: the localization of cell nuclei (identification), the extraction of different features (extracting characteristics), and the classification as LSIL, HSIL, normal, and abnormal cells. We have presented a method that focuses on the use of CNNs to obtain a complementary set of features for classification, and, particularly, on a feature-driven technique to train and feed the CNN. Our study demonstrates that using an ensemble of classical features and CNN features from the nucleus and cytoplasm yields results far superior to the state-of-the-art when using small training datasets.   
+ 
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Backmatter begins here                   %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{backmatter}
+
+\section*{Competing interests}
+  The authors declare that they have no competing interests.
+
+\section*{Author's contributions}
+    ST and JB conceived of the study, carried out the algorithm implementation, performed the statistical analysis, and drafted the manuscript; FF helped to its draft. All authors read and approved the final manuscript.
+
+\section*{Acknowledgements}
+  Acknowledgments: This work has been partially supported by the “8th Agreement of Inter-University Cooperation Projects, UAM-Santander Bank with Latin America”.  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                  The Bibliography                       %%
+%%                                                         %%
+%%  Bmc_mathpys.bst  will be used to                       %%
+%%  create a .BBL file for submission.                     %%
+%%  After submission of the .TEX file,                     %%
+%%  you will be prompted to submit your .BBL file.         %%
+%%                                                         %%
+%%                                                         %%
+%%  Note that the displayed Bibliography will not          %%
+%%  necessarily be rendered by Latex exactly as specified  %%
+%%  in the online Instructions for Authors.                %%
+%%                                                         %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% if your bibliography is in bibtex format, use those commands:
+\bibliographystyle{bmc-mathphys} % Style BST file (bmc-mathphys, vancouver, spbasic).
+\bibliography{bmc_article}      % Bibliography file (usually '*.bib' )
+% for author-year bibliography (bmc-mathphys or spbasic)
+% a) write to bib file (bmc-mathphys only)
+% @settings{label, options="nameyear"}
+% b) uncomment next line
+%\nocite{label}
+
+% or include bibliography directly:
+% \begin{thebibliography}
+% \bibitem{b1}
+% \end{thebibliography}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                               %%
+%% Figures                       %%
+%%                               %%
+%% NB: this is for captions and  %%
+%% Titles. All graphics must be  %%
+%% submitted separately and NOT  %%
+%% included in the Tex document  %%
+%%                               %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%
+%% Do not use \listoffigures as most will included as separate files
+
+\section*{Figures}
+
+  \begin{figure}[h!]
+  \caption{\csentence{Overall method description.}
+      Extraction of classical features from L-SIL and H-SIL cells; generation of synthetic input images to train and test the CNN; combination of classical features and CNN features when testing with an H-SIL normal.}
+      \end{figure}
+
+\begin{figure}[h!]
+  \caption{\csentence{Results.}
+      Compared results using the TRF technique with classical features, with CNN features and with the aggregation of both sets of features.}
+      \end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                               %%
+%% Tables                        %%
+%%                               %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Use of \listoftables is discouraged.
+%%
+\section*{Tables}
+\begin{table}[h!]
+\caption{Quantitative comparison between the proposed method and those reported by other authors.}
+      \begin{tabular}{ | p{0.45cm}| p{0.52cm}| p{0.65cm}| p{0.5cm}| p{0.45cm}| p{0.5cm}| p{0.4cm}| p{0.5cm} |p{0.4cm}|}%{ccccccccc}
+        \hline
+        Ref   	& Tech  	& s-fold   	& TPR	& PPV 	& ACC 	& AUC 	& rmse 	& k		\\ \hline 
+ 		\multirow{3}{*}{PM} &
+ 					\multirow{3}{*}{TRF} 					 			 			
+ 		 			 			& s=10 		& 0.993	& 1		& 0.998	& 1 	& 0.021	& 0.995	\\ 
+        			& 			& s=5 		& 0.986	& 1 	& 0.997	& 1 	& 0.039	& 0.991 \\ 
+        		 	&  			& s=2 		& 0.986	& 1 	& 0.997	& 1 	& 0.054	& 0.991	\\ \hline
+      	\cite{6} 	 	& ANN 		& s=loo 	& 		& 	 	& 0.992	& 	 	& 		& 0.97	\\ \hline
+		\cite{5} 	 	& BT 		& s=2	 	& 		& 	 	&		& 	 	& 		& 0.84	\\ \hline
+		\cite{10}	 		& SVM		& s=5	 	& 		& 	 	&		& 0.88 	& 		&		\\ \hline
+		\multirow{3}{*}{\cite{2}} &
+ 					\multirow{3}{*}{PSO}
+		 	 		  			& s=10	 	& 		& 	 	&		& 	 	& 0.12	&		\\ 
+			 		& 			& s=5	 	& 		& 	 	&		& 	 	& 0.17	&		\\ 
+		 	 		&  			& s=2	 	& 		& 	 	&		& 	 	& 0.22	&		\\ \hline
+		\cite{9}	 		& ANN		& s=10	 	&  		& 	 	& 0.99	& 	 	& 		&		\\ \hline
+		\cite{3}	 		& GP		& s=2	 	& 0.928	& 	 	&		& 	 	& 		&		\\ \hline
+        \multicolumn{9}{p{7.9 cm}}{ACC: accuracy; ANN: Artificial Neuronal Networks; AUC: area under the ROC; BT: Binary tree; GP: Genetic programing; k: Kappa statistic; loo: Leave one out; PM: proposed method; PPV: precision or positive predictive value; PSO: Particle swarm optimization; Ref: reference; rmse: root mean squared error; SVM: Support vector machine; Tech: technique; TPR: sensitivity, recall or true positive rate; TRF: Tree random forest.} \\ \hline
+      \end{tabular}
+
+\end{table}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                               %%
+%% Additional Files              %%
+%%                               %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{Additional Files}
+  \subsection*{Additional file 1 --- Database}
+    The entire cervical cells images database (class 1-2, H-SIL and L-SIL) and the ground-truth (as binary jpg images), both for obtained the synthetic cell images.
+  \subsection*{Additional file 2 --- Interface}
+    Classical/CNN-TRF method (as Matlab interface).
+  \subsection*{Additional file 3 --- Weka Files}
+    Weka features and associated class for test and train experiments (as ARFF Data File) and Weka TRF, MLP, BN models for final results.
+
+
+
+\end{backmatter}
+\end{document}
